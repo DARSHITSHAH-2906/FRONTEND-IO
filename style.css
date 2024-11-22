@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    max-width:1440px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 8%);
+    min-width: 375px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    box-sizing: border-box;
+    height: 70%;
+    width: 23%;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+}
+
+.profile-img{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.info{
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+}
+
+.info #country{
+    font-size: 15px;
+    color: hsl(75, 94%, 57%);
+}
+
+.career-info{
+    color: white;
+}
+
+.social-links{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links button{
+    width: 250px;
+    height: 35px;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.social-links button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 90%; 
+        height: auto; 
+        padding: 20px;
+    }
+
+    .profile-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .social-links button {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 23%;
+    }
+}
